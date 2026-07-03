@@ -40,10 +40,10 @@ jobs:
           python-version: '3.11'
 
       - name: Run caveman-compress tests
-        run: python -m unittest tests/test_compress_safety.py -v
+        run: python tests/test_compress_safety.py
 
       - name: Run caveman-compress validation tests
-        run: python -m unittest tests/test_validate_inline.py -v
+        run: python tests/test_validate_inline.py
 
       - name: Run hook tests
-        run: python -m unittest tests/test_hooks.py -v
+        run: python tests/test_hooks.py
